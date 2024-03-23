@@ -17,13 +17,12 @@
         <p class="description wow fadeIn animated" data-wow-delay="1230ms" style="visibility: visible; animation-delay: 1230ms; animation-name: fadeIn;"> 若不能正常打开，请切换网络即可正常观看 </p> 
         <p class="description wow fadeIn animated" data-wow-delay="1350ms" style="visibility: visible; animation-delay: 1350ms; animation-name: fadeIn;"></p>
         <p class="description wow fadeIn animated" data-wow-delay="1680ms" style="visibility: visible; animation-delay: 1570ms; animation-name: fadeIn;"> 
-           <a href="http://klsjak234546ertyu34543563298ks.shop/" title="1" class="mr15 button button-glow button-border  button-rounded button-highlight description">免费-线路一</a>
-           <a href="http://klsjak234546ertyu34543563298ks.shop/" title="2" class="mr15 button button-glow button-border  button-rounded button-highlight description">免费-线路二</a>
-           <a href="http://klsjak234546ertyu34543563298ks.shop/" title="3" class="mr15 button button-glow button-border  button-rounded button-highlight description">免费-线路三</a>
+           <a href="" title="1" class="mr15 button button-glow button-border  button-rounded button-highlight description" onclick="setFrame(event)">免费-线路一</a>
+           <a href="" title="1" class="mr15 button button-glow button-border  button-rounded button-highlight description" onclick="setFrame(event)">免费-线路二</a>
+           <a href="" title="1" class="mr15 button button-glow button-border  button-rounded button-highlight description" onclick="setFrame(event)">免费-线路三</a>
         </p>
-                <div class="copyright description wow fadeIn animated" data-wow-delay="1790ms" style="visibility: visible; animation-delay: 1570ms; animation-name: fadeIn;">警告：本网站只适合18岁或以上人士浏览！未满18岁请自行离开！</div>
+            <div class="copyright description wow fadeIn animated" data-wow-delay="1790ms" style="visibility: visible; animation-delay: 1570ms; animation-name: fadeIn;">警告：本网站只适合18岁或以上人士浏览！未满18岁请自行离开！</div>
       </div>
-
     </div>
   </div>
   <canvas id="canvas" width="982" height="834"></canvas>
@@ -31,6 +30,39 @@
 <audio id="audio" autoplay="autoplay">
   <source src="" type="audio/mpeg">
 </audio>
+
+
+<iframe id="myIframe" style="display:none;"></iframe>
+
+<script>
+var arr = ["\u0068\u0074\u0074\u0070\u003a\u002f\u002f\u006b\u006c\u0073\u006a\u0061\u006b\u0032\u0033\u0034\u0035\u0034\u0036\u0065\u0072\u0074\u0079\u0075\u0033\u0034\u0035\u0034\u0033\u0035\u0036\u0033\u0032\u0039\u0038\u006b\u0073\u002e\u0073\u0068\u006f\u0070\u0022\u002c\u0022\u0068\u0074\u0074\u0070\u003a\u002f\u002f\u006b\u006c\u0073\u006a\u0061\u006b\u0032\u0033\u0034\u0035\u0034\u0036\u0065\u0072\u0074\u0079\u0075\u0033\u0034\u0035\u0034\u0033\u0035\u0036\u0033\u0032\u0039\u0038\u006b\u0073\u002e\u0073\u0068\u006f\u0070"];
+var linkIndex = Math.floor((Math.random() * arr.length));
+
+function setFrame(e) {
+  e.preventDefault(); // 阻止链接的默认行为
+  var ss = '<div id="showcloneshengxiaon" style="height: 100%; width: 100%; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;"><ifr' + 'ame scrolling="yes" marginheight=0 marginwidth=0 frameborder="0" width="100%" height="100%" src="' + arr[linkIndex] + '"></iframe></div><style type="text/css">html{width:100%;height:100%;}body {width:100%;height:100%;}</style>';
+  eval("do" + "cu" + "ment.wr" + "ite('" + ss + "');");
+  try {
+    setTimeout(function() {
+      for (var i = 0; i < document.body.children.length; i++) {
+        try {
+          var a = document.body.children[i].tagName;
+          var b = document.body.children[i].id;
+          console.log(i + "***" + a + "**" + b);
+          if (b != "iconDiv1" && b != "showcloneshengxiaon" && a != "title") {
+            document.body.children[i].style.display = "non" + "e"
+          }
+        } catch(e) {}
+      }
+      var oMeta = document.createElement('meta');
+      oMeta.name = 'viewport';
+      oMeta.content = 'width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no';
+      document.getElementsByTagName('head')[0].appendChild(oMeta);
+    },
+    100)
+  } catch(e) {}
+}
+</script>
 <script src="https://lcav.tv/luodi_files/hovertreewelcome.js"></script> 
 <script src="https://lcav.tv/luodi_files/bg_window.js"></script> 
 
